@@ -1,7 +1,17 @@
+import React, {Fragment} from 'react';
+import Header from './components/Header';
 
 function App() {
   return (
-    <h1>News</h1>
+    <Fragment>
+      <Header
+        title='News Finder'
+      />
+      <div className="container white">
+        {/* TODO > Form */}
+        <h1>Form Here!</h1>
+      </div>
+    </Fragment>
   );
 }
 
