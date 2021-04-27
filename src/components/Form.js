@@ -5,7 +5,17 @@ import styles from './Form.module.css';
 
 const Form = () => {
 
-  const [category, SelectNews] = useSelect();
+  const OPTIONS = [
+    { value: 'general', label: 'General'},
+    { value: 'business', label: 'Buisiness'},
+    { value: 'entertainment', label: 'Entertainment'},
+    { value: 'health', label: 'Health'},
+    { value: 'science', label: 'Science'},
+    { value: 'sports', label: 'Sports'},
+    { value: 'technology', label: 'Technology'},
+  ];
+
+  const [category, SelectNews] = useSelect('general', OPTIONS);
 
   return (
     <div className={`${styles.searcher} row`}>
