@@ -1,6 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import Form from './components/Form';
 import Header from './components/Header';
+import NewsList from './components/NewsList';
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
       <div className="container white">
         <Form
           saveCategory={saveCategory}
+        />
+        <NewsList
+          news={news}
         />
       </div>
     </Fragment>
