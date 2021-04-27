@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import Form from './components/Form';
 import Header from './components/Header';
 
 function App() {
@@ -8,8 +9,7 @@ function App() {
         title='News Finder'
       />
       <div className="container white">
-        {/* TODO > Form */}
-        <h1>Form Here!</h1>
+        <Form />
       </div>
     </Fragment>
   );
